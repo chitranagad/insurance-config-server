@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: insurance-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chitranagad/insurance-cloud-config-server
+          default-label: main
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8888
